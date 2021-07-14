@@ -19,6 +19,37 @@ p{
     color: #6C6C6C;
     margin: 0;
 }
+/* header styles */
+header{
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 67px 0px 86px 0px;
+}
+.topper-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.topper-info h1{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 64px;
+}
+.topper-info .watch-now a{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.topper-info .fa-arrow-right{
+    margin-left: 8px;
+}
+.topper-area .topper-banner img{
+    width: 556.01px;
+    height: 438px;
+}
  /*
 --------------------------
     players-area styles
@@ -46,9 +77,12 @@ p{
  }
 .player h3{
     font-size: 28px;
-    color: #18191F;
     margin: 0;
     padding: 16px 0px 10px 0px;
+ }
+ .player a{
+    color: #18191F;
+    text-decoration: none;
  }
 
  /*
@@ -87,8 +121,125 @@ p{
     width: 567px;
     height: 427px;
 }
+
+/* shop area styles */
+.afc-shop, .afc-location-title{
+    color: #E02C6D;
+    text-transform: uppercase;
+}
+
+.shops{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+}
+.shop{
+    background-color: #E02C6D;
+    cursor: pointer;
+}
+.shop{
+    border: 1px solid #7E0019;
+    box-shadow: 0px 3px 8px 0px brown;
+}
+.shop img{
+    width:100%;
+}
+
+/* location style */
+.location{
+    margin-top: 70px;
+}
  /*
 --------------------------
     footer styles
 --------------------------
 */
+.footer-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 0px 63px 0px;
+}
+.footer-logo img{
+    width: 483.87px;
+    height: 110px;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon .font-icon{
+    padding: 20px 0px;
+}
+.icon .footer-icon{
+    padding: 14px;
+    color: #969BAB;
+    background-color: #E7E7E8;
+    margin-right: 14px;
+    border-radius: 50%;
+}
+.icon .font-icon a{
+    text-decoration: none;
+}
+.copyright{
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+
+/* media-queriye */
+/* mobile-device */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    /* header */
+    header{
+        padding: 30px 0px;
+    }
+    .topper-area{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 16px;
+    }
+    .topper-info h1{
+        font-size: 36px;
+    }
+    .topper-area .topper-banner{
+        padding-top: 35px;
+    }
+    .topper-area .topper-banner img{
+        width: 100%;
+        height: auto;
+    }
+    /* players */
+    .players{
+        /* display: flex;
+        flex-direction: column; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player img{
+        width: 100%;
+        height: auto;
+     }
+     /* highlights */
+     .highlights-area{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 35px 0px;
+     }
+     .highlights-thumbnail{
+         margin-top: 29px;
+     }
+     .highlights-thumbnail img{
+        width: 100%;
+        height: auto;
+    }
+    /* shops */
+    .shops{
+        padding: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+  
