@@ -1,10 +1,8 @@
-/* fonts */
+/* ----------fonts--------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-/*
------------------
- common styles
-------------------
-*/
+
+/* ---------------common style or utilities------------- */
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
@@ -25,11 +23,7 @@ p{
     color: #6C6C6C;
     margin: 0;
 }
-/*
------------------
- header styles
------------------
-*/
+/* --------------header styles------------- */
 header{
     background-color: #2D25A0;
     display: flex;
@@ -71,11 +65,7 @@ header{
     width: 556.01px;
     height: 438px;
 }
- /*
---------------------------
-    players-area styles
---------------------------
-*/
+/* -----------------players-area styles------------- */
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -106,11 +96,7 @@ header{
     text-decoration: none;
  }
 
- /*
- --------------------------
-    highlights-area styles
----------------------------
-*/
+ /* ---------------highlights-area styles----------- */
 .highlights-area{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -152,11 +138,7 @@ header{
     transform: scale(0.75);
     transition: 1s linear;
 }
-/*
---------------------
-    shop area styles 
---------------------
-*/
+/* --------------------shop area styles-------------- */
 .dream-shop{
     color: #E02C6D;
     text-transform: uppercase;
@@ -182,10 +164,7 @@ header{
     transform: scale(0.75);
     transition: 1s linear;
 }
-/* -------------------------
-    footer styles
---------------------------
-*/ 
+/* -----------------footer styles---------------- */
 .footer-area{
     display: flex;
     flex-direction: column;
@@ -220,18 +199,46 @@ header{
     letter-spacing: 1px;
 }
 
-/*
------------------
-    media-queriye
-------------------
-*/
+/* --------------------media-queriyes----------------- */
+@media only screen and(max-width:680px) {
+    .container{
+        background-color: brown;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }
+    
+}
+/* --------------mobile-device----------  */
 
-/*
------------------
-    mobile-device 
-------------------
-*/
 @media only screen and (max-width:688px) {
-.container{
-    width: 100%;
+    .container{
+        width: 100%;
+    }
+
+    .container,.player{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .container,.player{
+        flex-direction: column;
+    }
+ .player{
+        display: none;
+    }
+    
+}
+
+/*-----------------tablet divices--------------*/
+@media only screen and (min-width:688px)and(max-width:922px) {
+    .container{
+        width: 100%;
+    }
+    .container,.player{
+       
+        grid-template-columns: repeat(2,1fr);
+    }
+   .player{
+       
+        grid-template-columns: repeat(1,1fr);
+    }
 }
