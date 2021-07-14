@@ -1,6 +1,10 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-/* common styles */
+/*
+-----------------
+ common styles
+------------------
+*/
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
@@ -8,18 +12,24 @@ body{
 .container{
     width: 1050px; 
 }
+.orange-color{
+    color: firebrick;
+}
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
 }
 p{
     font-size: 16px;
     color: #6C6C6C;
     margin: 0;
 }
-/* header styles */
+/*
+-----------------
+ header styles
+-----------------
+*/
 header{
     background-color: #2D25A0;
     display: flex;
@@ -42,6 +52,17 @@ header{
     color: #FFFFFF;
     padding: 10px 20px;
     font-weight: 500;
+    border-radius: 5%;
+}
+.topper-info .watch-now:hover{
+    transform: translateY(5px);
+    transition: 1s linear;
+}
+.topper-info .watch-now a:hover{
+    background-color: #FFFFFF;
+    color: #2D25A0;
+    transition: 1s linear;
+    box-shadow: -1px 3px 0px 4px #e02c6d;
 }
 .topper-info .fa-arrow-right{
     margin-left: 8px;
@@ -86,9 +107,9 @@ header{
  }
 
  /*
---------------------------
+ --------------------------
     highlights-area styles
---------------------------
+---------------------------
 */
 .highlights-area{
     display: grid;
@@ -114,6 +135,12 @@ header{
     padding: 10px 20px;
     font-weight: 500;
 }
+.highlights-info .watch-now a:hover{
+    background-color: #FFFFFF;
+    color: #2D25A0;
+    transition: 1s linear;
+    box-shadow: -1px 3px 0px 4px #e02c6d;
+}
 .highlights-info .fa-arrow-right{
     margin-left: 8px;
 }
@@ -121,9 +148,16 @@ header{
     width: 567px;
     height: 427px;
 }
-
-/* shop area styles */
-.afc-shop, .afc-location-title{
+.highlights-thumbnail img:hover{
+    transform: scale(0.75);
+    transition: 1s linear;
+}
+/*
+--------------------
+    shop area styles 
+--------------------
+*/
+.dream-shop{
     color: #E02C6D;
     text-transform: uppercase;
 }
@@ -134,26 +168,24 @@ header{
     grid-column-gap: 10px;
 }
 .shop{
-    background-color: #E02C6D;
     cursor: pointer;
 }
 .shop{
-    border: 1px solid #7E0019;
-    box-shadow: 0px 3px 8px 0px brown;
+    border: 1px solid #e4d6d6;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10%;
 }
 .shop img{
     width:100%;
 }
-
-/* location style */
-.location{
-    margin-top: 70px;
+.shop:hover img{
+    transform: scale(0.75);
+    transition: 1s linear;
 }
- /*
---------------------------
+/* -------------------------
     footer styles
 --------------------------
-*/
+*/ 
 .footer-area{
     display: flex;
     flex-direction: column;
@@ -188,58 +220,18 @@ header{
     letter-spacing: 1px;
 }
 
+/*
+-----------------
+    media-queriye
+------------------
+*/
 
-/* media-queriye */
-/* mobile-device */
+/*
+-----------------
+    mobile-device 
+------------------
+*/
 @media only screen and (max-width:688px) {
-    .container{
-        width: 100%;
-    }
-    /* header */
-    header{
-        padding: 30px 0px;
-    }
-    .topper-area{
-        grid-template-columns: repeat(1, 1fr);
-        padding: 0px 16px;
-    }
-    .topper-info h1{
-        font-size: 36px;
-    }
-    .topper-area .topper-banner{
-        padding-top: 35px;
-    }
-    .topper-area .topper-banner img{
-        width: 100%;
-        height: auto;
-    }
-    /* players */
-    .players{
-        /* display: flex;
-        flex-direction: column; */
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .player img{
-        width: 100%;
-        height: auto;
-     }
-     /* highlights */
-     .highlights-area{
-        grid-template-columns: repeat(1, 1fr);
-        padding: 35px 0px;
-     }
-     .highlights-thumbnail{
-         margin-top: 29px;
-     }
-     .highlights-thumbnail img{
-        width: 100%;
-        height: auto;
-    }
-    /* shops */
-    .shops{
-        padding: auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-    }
-  
+.container{
+    width: 100%;
+}
