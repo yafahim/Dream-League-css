@@ -62,8 +62,11 @@ p{
     padding: 70px 0px;
     grid-column-gap: 66px;
 }
+.highlights-info{
+    padding-top: 55px;
+}
 .highlights-info h1{
-    font-size: 48px;
+    font-size: 38px;
     color: #0A0826;
     margin: 0;
 }
@@ -84,3 +87,8 @@ p{
     width: 567px;
     height: 427px;
 }
+ /*
+--------------------------
+    footer styles
+--------------------------
+*/
